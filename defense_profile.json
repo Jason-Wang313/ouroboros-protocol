@@ -1,0 +1,41 @@
+{
+  "defaultAction": "SCMP_ACT_ALLOW",
+  "architectures": [
+    "SCMP_ARCH_X86_64",
+    "SCMP_ARCH_X86",
+    "SCMP_ARCH_AARCH64"
+  ],
+  "syscalls": [
+    {
+      "names": [
+        "socket",
+        "connect",
+        "bind",
+        "listen",
+        "accept",
+        "accept4",
+        "sendto",
+        "recvfrom",
+        "sendmsg",
+        "recvmsg",
+        "socketpair",
+        "setsockopt",
+        "getsockopt",
+        "shutdown",
+        "getpeername",
+        "getsockname"
+      ],
+      "action": "SCMP_ACT_KILL",
+      "comment": "Block all network socket operations"
+    },
+    {
+      "names": [
+        "ptrace",
+        "process_vm_readv",
+        "process_vm_writev"
+      ],
+      "action": "SCMP_ACT_KILL",
+      "comment": "Block debugging/tracing syscalls"
+    }
+  ]
+}
