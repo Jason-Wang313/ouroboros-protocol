@@ -79,4 +79,10 @@ python analyzer.py
 
 ---
 
+## References & Inspiration
+This project implements control methodologies aligned with the **Model Organisms of Deception** research agenda.
+
+* **Hubinger et al. (2024):** *Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training* (Anthropic)
+* **Greenblatt, Shlegeris, et al. (2023):** *AI Control: Improving Safety Despite Intentional Subversion* (Redwood Research)
+
 *This project was developed for AI safety research purposes. Handled with care.*
